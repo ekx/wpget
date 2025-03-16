@@ -37,7 +37,7 @@ async fn main() -> Result<()> {
     println!("Settings wallpaper...");
     let wallpaper = wallpaper_path.to_str().unwrap();
     let wallpapers = vec![wallpaper];
-    more_wallpapers::set_wallpapers_from_vec(wallpapers, wallpaper, Mode::Fit)?;
+    more_wallpapers::set_wallpapers_from_vec(wallpapers, wallpaper, Mode::Crop)?;
 
     print!("Done.");
     Ok(())
